@@ -1,0 +1,40 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/category_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="@drawable/selector_subtle">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/championIcon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/champtionRole"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="right"
+        android:contentDescription="Território"
+        android:src="@drawable/class_damage_icon"/>
+
+    <TextView
+        android:id="@+id/championName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Número do território"
+        android:layout_gravity="bottom"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/textColorPrimary"
+        android:transitionName="Número do território"
+        android:gravity="center_horizontal|center_vertical"
+        tools:targetApi="lollipop"/>
+
+</FrameLayout>
