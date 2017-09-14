@@ -1,26 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#20727e</color>
-    <color name="colorPrimaryLight">#56a1ad</color>
-    <color name="colorPrimaryDark">#004652</color>
+    <color name="colorPrimary">#002334</color>
+    <color name="colorPrimaryBackground">#134b5e</color>
+    <color name="colorPrimaryLight">#46778b</color>
+    <color name="colorPrimaryDark">#000C15</color>
     <color name="textColorPrimary">#ffffff</color>
-    <color name="textColorSecondary">#000000</color>
-    <color name="colorBackgroundGray">#e1e2e1</color>
-    <color name="colorAccent">#20727e</color>
-    <color name="colorBackground">#243745</color>
+    <color name="textColorSecondary">#033945</color>
+    <color name="colorAccent">#145e75</color>
     <color name="colorTouchEffect">#9ccc</color>
-    <color name="mcgpalette050">#e4eef0</color>
-    <color name="mcgpalette0100">#bcd5d8</color>
-    <color name="mcgpalette0200">#90b9bf</color>
-    <color name="mcgpalette0300">#639ca5</color>
-    <color name="mcgpalette0400">#418791</color>
-    <color name="mcgpalette0500">#20727e</color>
-    <color name="mcgpalette0600">#1c6a76</color>
-    <color name="mcgpalette0700">#185f6b</color>
-    <color name="mcgpalette0800">#135561</color>
-    <color name="mcgpalette0900">#0b424e</color>
-    <color name="mcgpalette0A100">#85e6ff</color>
-    <color name="mcgpalette0A200">#52dbff</color>
-    <color name="mcgpalette0A400">#1fd1ff</color>
-    <color name="mcgpalette0A700">#05cbff</color>
 </resources>

@@ -6,7 +6,7 @@ package phr33ze.google.com.paladins.model;
 
 public class Ability {
     private String abilityName;
-    private int abilityId;
+    private int id;
     private String abilityDescription;
     private String abilityIcon;
     private String abilityNumber;
@@ -14,9 +14,9 @@ public class Ability {
     public Ability() {
     }
 
-    public Ability(String abilityName, int abilityId, String abilityDescription, String abilityIcon, String abilityNumber) {
+    public Ability(String abilityName, int id, String abilityDescription, String abilityIcon, String abilityNumber) {
         this.abilityName = abilityName;
-        this.abilityId = abilityId;
+        this.id = id;
         this.abilityDescription = abilityDescription;
         this.abilityIcon = abilityIcon;
         this.abilityNumber = abilityNumber;
@@ -30,12 +30,12 @@ public class Ability {
         this.abilityName = abilityName;
     }
 
-    public int getAbilityId() {
-        return abilityId;
+    public int getId() {
+        return id;
     }
 
-    public void setAbilityId(int abilityId) {
-        this.abilityId = abilityId;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getAbilityDescription() {

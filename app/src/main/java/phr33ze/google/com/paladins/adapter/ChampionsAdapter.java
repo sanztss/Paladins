@@ -20,6 +20,8 @@ import de.hdodenhof.circleimageview.CircleImageView;
 import phr33ze.google.com.paladins.R;
 import phr33ze.google.com.paladins.model.Champion;
 
+import static phr33ze.google.com.paladins.R.id.champtionRole;
+
 /**
  * Created by Des. Android on 11/09/2017.
  */
@@ -60,13 +62,14 @@ public class ChampionsAdapter extends RecyclerView.Adapter<ChampionsAdapter.View
     @Override
     public void onBindViewHolder(final ViewHolder holder, final int position) {
         Champion champion = champions.get(position);
-        System.out.println(champion.getName());
-        //holder.itemView.setBackgroundColor(mResources.getColor(R.color.mcgpalette0300));
+        String roleFormated = champion.getRoles();
+        roleFormated = roleFormated.replaceAll("Paladins ", "");
+        roleFormated = roleFormated.toLowerCase().replaceAll("[^a-zA-Z]", "_");
+        Glide.with(mContext).load(mResources.getIdentifier("class" + roleFormated + "_icon", DRAWABLE, mPackageName)).into(holder.champtionRole);
         String fileNameFormated = champion.getName().toLowerCase();
         fileNameFormated = fileNameFormated.replaceAll("[^a-zA-Z]+", "");
         Glide.with(mContext).load(mResources.getIdentifier("champion_" + fileNameFormated + "_icon", DRAWABLE, mPackageName)).into(holder.championIcon);
         holder.championName.setText(champion.getName());
-        holder.championName.setBackgroundColor(mResources.getColor(R.color.mcgpalette0900));
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -93,12 +96,16 @@ public class ChampionsAdapter extends RecyclerView.Adapter<ChampionsAdapter.View
     }
 
     static class ViewHolder extends RecyclerView.ViewHolder {
-        CircleImageView championIcon;
+        //CircleImageView championIcon;
         TextView championName;
+        ImageView champtionRole;
+        ImageView championIcon;
 
         public ViewHolder(View itemView) {
             super(itemView);
-            championIcon = (CircleImageView) itemView.findViewById(R.id.championIcon);
+            //championIcon = (CircleImageView) itemView.findViewById(R.id.championIcon);
+            championIcon = (ImageView) itemView.findViewById(R.id.championIcon);
+            champtionRole = (ImageView) itemView.findViewById(R.id.champtionRole);
             championName = (TextView) itemView.findViewById(R.id.championName);
         }
     }
