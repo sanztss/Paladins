@@ -49,14 +49,15 @@ public class ChampionOverviewFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.champion_overview_fragment, container, false);
 
         mChart = (RadarChart) rootView.findViewById(R.id.chart1);
-        mChart.setBackgroundColor(Color.rgb(225, 226, 225));
+        //mChart.setBackgroundColor(Color.rgb(225, 226, 225));
+        mChart.setBackgroundColor(Color.rgb(255, 255, 255));
 
         mChart.getDescription().setEnabled(false);
 
         mChart.setWebLineWidth(1f);
-        mChart.setWebColor(getResources().getColor(R.color.colorPrimary));
+        mChart.setWebColor(getResources().getColor(R.color.colorPrimaryDark));
         mChart.setWebLineWidthInner(1f);
-        mChart.setWebColorInner(getResources().getColor(R.color.colorPrimary));
+        mChart.setWebColorInner(getResources().getColor(R.color.colorPrimaryDark));
         mChart.setWebAlpha(100);
 
         // create a custom MarkerView (extend MarkerView) and specify the layout
@@ -85,7 +86,7 @@ public class ChampionOverviewFragment extends Fragment {
                 return mActivities[(int) value % mActivities.length];
             }
         });
-        xAxis.setTextColor(getResources().getColor(R.color.colorPrimary));
+        xAxis.setTextColor(getResources().getColor(R.color.colorPrimaryDark));
 
         YAxis yAxis = mChart.getYAxis();
         yAxis.setLabelCount(5, false);
@@ -101,7 +102,7 @@ public class ChampionOverviewFragment extends Fragment {
         l.setDrawInside(false);
         l.setXEntrySpace(7f);
         l.setYEntrySpace(5f);
-        l.setTextColor(getResources().getColor(R.color.colorPrimary));
+        l.setTextColor(getResources().getColor(R.color.colorPrimaryDark));
         l.setEnabled(false);
 
         return rootView;
