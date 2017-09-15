@@ -79,7 +79,7 @@ public class ChampionOverviewFragment extends Fragment {
         xAxis.setXOffset(0f);
         xAxis.setValueFormatter(new IAxisValueFormatter() {
 
-            private String[] mActivities = new String[]{"Damage", "Toughness", "Control", "Mobility", "Utility"};
+            private String[] mActivities = new String[]{"Health", "Speed", "Damage(DPS)", "Heal(HPS)", "Crowd control"};
 
             @Override
             public String getFormattedValue(float value, AxisBase axis) {

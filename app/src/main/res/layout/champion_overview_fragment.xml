@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -14,24 +15,311 @@
             android:layout_width="match_parent"
             android:layout_height="300dp"/>
 
-        <RelativeLayout
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="20dp"
+            android:background="@color/colorAccent"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="@color/textColorSecondary"
+            android:text="Skills"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp">
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPadding="10dp"
+            android:elevation="4dp">
 
-            <TextView
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:paddingLeft="20dp"
-                android:background="@color/colorAccent"
-                android:gravity="center_vertical"
-                android:textSize="20sp"
-                android:textColor="@color/textColorSecondary"
-                android:text="Skills"/>
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ability1Icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/weaponattack_androxus_icon"/>
+
+                <TextView
+                    android:id="@+id/ability1Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Revolver"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColorSecondary"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="70dp"
+                    android:gravity="top"
+                    android:layout_marginTop="-10dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_mouse_left_button"
+                    android:layout_below="@+id/ability1Name"
+                    android:layout_marginLeft="65dp"/>
+
+                <TextView
+                    android:id="@+id/ability1Description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A six shot revolver that deals 600 damage per shot at close range every .5s. Effective at short range."
+                    android:textSize="16sp"
+                    android:textColor="#333"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/ability1Icon"/>
+
+            </RelativeLayout>
+            
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPadding="10dp"
+            android:elevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ability2Icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ability_defiance"/>
+
+                <TextView
+                    android:id="@+id/ability2Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Defiance"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColorSecondary"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="70dp"
+                    android:gravity="top"
+                    android:layout_marginTop="-10dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_right_click_of_the_mouse"
+                    android:layout_below="@+id/ability2Name"
+                    android:layout_marginLeft="70dp"/>
+
+                <TextView
+                    android:id="@+id/ability2Description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fire a burst of 3 rounds from your revolver, with reduced accuracy dealing 300 damage per shot over 1.2 seconds. Bonus Damage: If you hit all 3 shots, you deal an additional 500 damage."
+                    android:textSize="16sp"
+                    android:textColor="#333"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/ability2Icon"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
 
 
-        </RelativeLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPadding="10dp"
+            android:elevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ability3Icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ability_reversal"/>
+
+                <TextView
+                    android:id="@+id/ability3Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reversal"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColorSecondary"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="70dp"
+                    android:gravity="top"
+                    android:layout_marginTop="-10dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_letter_q_key_on_keyboard"
+                    android:layout_below="@+id/ability3Name"
+                    android:layout_marginLeft="70dp"/>
+
+                <TextView
+                    android:id="@+id/ability3Description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Absorb all shots from the front. After 1.4s, fire a blast dealing 75% of the damage you absorbed."
+                    android:textSize="16sp"
+                    android:textColor="#333"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/ability3Icon"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPadding="10dp"
+            android:elevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ability4Icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ability_nether_step"/>
+
+                <TextView
+                    android:id="@+id/ability4Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nether Step"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColorSecondary"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="70dp"
+                    android:gravity="top"
+                    android:layout_marginTop="-10dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_keyboard_key_f"
+                    android:layout_below="@+id/ability4Name"
+                    android:layout_marginLeft="70dp"/>
+
+                <TextView
+                    android:id="@+id/ability4Description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quickly dash forward in any direction. Can be used three times before going on Cooldown. Hold Jump while in the air to reduce fall speed."
+                    android:textSize="16sp"
+                    android:textColor="#333"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/ability4Icon"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPadding="10dp"
+            android:elevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ability5Icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ability_accursed_arm"/>
+
+                <TextView
+                    android:id="@+id/ability5Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Accursed Arm"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColorSecondary"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="70dp"
+                    android:gravity="top"
+                    android:layout_marginTop="-10dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_keyboard_key_e"
+                    android:layout_below="@+id/ability5Name"
+                    android:layout_marginLeft="70dp"/>
+
+                <TextView
+                    android:id="@+id/ability5Description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Begin flying for 4s and mutate your Revolver to fire 4 explosive blasts that deal 1000 damage every .5 seconds."
+                    android:textSize="16sp"
+                    android:textColor="#333"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/ability5Icon"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
     </LinearLayout>
 </ScrollView>
 

@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
             protected Void doInBackground(Void... params) {
                 HiRezAPI api = new HiRezAPI("2252", "46B55A6B78144BD281621F003E8E759E");
                 StringData getPatchInfo = api.paladins(Paladins.Platform.PC, context).getPatchInfo();
+                System.out.println(api.paladins(Paladins.Platform.PC, context).getItems());
                 StringData getChampions;
                 try {
                     if (!cacheData.getString("patchInfo").equals(getPatchInfo.toJsonObject().getString("version_string"))){

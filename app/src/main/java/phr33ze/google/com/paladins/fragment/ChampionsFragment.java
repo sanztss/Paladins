@@ -29,6 +29,7 @@ import phr33ze.google.com.paladins.activity.ChampionActivity;
 import phr33ze.google.com.paladins.activity.MainActivity;
 import phr33ze.google.com.paladins.adapter.ChampionsAdapter;
 import phr33ze.google.com.paladins.model.Champion;
+import phr33ze.google.com.paladins.model.ChampionChart;
 import phr33ze.google.com.paladins.util.StringData;
 import phr33ze.google.com.paladins.util.TransitionHelper;
 
@@ -44,6 +45,7 @@ public class ChampionsFragment extends Fragment {
     private Resources mResources;
     private ChampionsAdapter mAdapter;
     private List<Champion> champions;
+    private List<ChampionChart> championCharts;
     private StringData mydata;
 
     public static ChampionsFragment newInstance() {
@@ -83,6 +85,21 @@ public class ChampionsFragment extends Fragment {
             JSONArray jsonArray = new JSONArray(contentJson);
             for (int i=0; i < jsonArray.length(); i++){
                 Champion champion = new Champion();
+
+                /*ChampionChart championChart = new ChampionChart();
+                championChart.setChampionId(jsonArray.getJSONObject(i).getInt("id"));
+                championChart.setHealth(jsonArray.getJSONObject(i).getInt("Health"));
+                championChart.setSpeed(jsonArray.getJSONObject(i).getInt("Speed"));
+                if (jsonArray.getJSONObject(i).getString("Roles").equals(" Paladins Support")){
+                    championChart.setHeal(jsonArray.getJSONObject(i).getInt("id"));
+                }else {
+                    championChart.setHeal(0);
+                }
+                championChart.setDamage(jsonArray.getJSONObject(i).getInt("id"));
+                championChart.setControl(jsonArray.getJSONObject(i).getInt("id"));*/
+
+
+
                 /*List<Ability> abilities = new ArrayList<Ability>();
                 for (int j=1; j < 6; j++){
                     Ability ability = new Ability();
