@@ -18,6 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import phr33ze.google.com.paladins.R;
+import phr33ze.google.com.paladins.fragment.ChampionBuildsFragment;
 import phr33ze.google.com.paladins.fragment.ChampionOverviewFragment;
 import phr33ze.google.com.paladins.model.Champion;
 
@@ -54,9 +55,11 @@ public class ChampionActivity  extends AppCompatActivity {
                     scrollRange = appBarLayout.getTotalScrollRange();
                 }
                 if (scrollRange + verticalOffset == 0) {
+                    collapsingToolbarLayout.setTitleEnabled(true);
                     collapsingToolbarLayout.setTitle("Androxus");
                     isShow = true;
                 } else if(isShow) {
+                    collapsingToolbarLayout.setTitleEnabled(false);
                     collapsingToolbarLayout.setTitle(" ");//carefull there should a space between double quote otherwise it wont work
                     isShow = false;
                 }
@@ -90,7 +93,7 @@ public class ChampionActivity  extends AppCompatActivity {
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new ChampionOverviewFragment(), "OVERVIEW");
-        adapter.addFragment(new ChampionOverviewFragment(), "BUILDS");
+        adapter.addFragment(new ChampionBuildsFragment(), "BUILDS");
         adapter.addFragment(new ChampionOverviewFragment(), "TRENDS");
         adapter.addFragment(new ChampionOverviewFragment(), "MATCHUPS");
         viewPager.setAdapter(adapter);
