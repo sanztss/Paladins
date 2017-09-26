@@ -1,0 +1,110 @@
+{
+    "teams":[
+        {
+            "name":"fnatic",
+            "logo": "ic_fnatic_logo",
+            "players": [
+                "Gerrah",
+                "Bugzy",
+                "Fisheko",
+                "Cybe8",
+                "Thiel"
+            ]
+        },
+        {
+            "name":"envyus",
+            "logo": "ic_envyus_logo",
+            "players": [
+                "badmit",
+                "Tulky",
+                "randomnoobtv",
+                "MrHaze",
+                "Invocal"
+            ]
+        },
+        {
+            "name":"nip",
+            "logo": "ic_nip_logo",
+            "players": [
+                "Shipa",
+                "PERDO",
+                "Laizy",
+                "bonkar",
+                "Bird"
+            ]
+        },
+        {
+            "name":"g2",
+            "logo": "ic_g2_logo",
+            "players": [
+                "Kusqt",
+                "doesupz",
+                "Wardoom",
+                "IDropBodies",
+                "Evulli",
+                "z1unknown"
+            ]
+        },
+        {
+            "name":"virtuspro",
+            "logo": "ic_virtuspro_logo",
+            "players": [
+                "eLvenpath",
+                "Sephicloud",
+                "CogCog",
+                "isbittenner",
+                "Simsiloo"
+            ]
+        },
+        {
+            "name":"navi",
+            "logo": "ic_navi_logo",
+            "players": [
+                "Faenex",
+                "Mutu",
+                "UNBELIVABLE",
+                "Creativs2",
+                "spunkki"
+            ]
+        },
+        {
+            "name":"mousesports",
+            "logo": "ic_mousesports_logo",
+            "players": []
+        },
+        {
+            "name":"renegades",
+            "logo": "ic_renegades_logo",
+            "players": [
+                "thebonscott",
+                "Stormtroopey",
+                "Vandyy",
+                "Ethereall",
+                "Cliku"
+            ]
+        },
+        {
+            "name":"splyce",
+            "logo": "ic_splyce_logo",
+            "players": [
+                "amosts",
+                "Rovaniik",
+                "ElZulu",
+                "Envy",
+                "killerumbrellas"
+            ]
+        },
+        {
+            "name":"sk",
+            "logo": "ic_sk_logo",
+            "players": [
+                "w1fl",
+                "PrinceDannyTV",
+                "stolzey",
+                "Vex30",
+                "Bitey",
+                "Alternit"
+            ]
+        }
+    ]
+}

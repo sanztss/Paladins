@@ -1,52 +1,231 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
- 
-    <android.support.v7.widget.CardView
-        android:id="@+id/card_view"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/teamLogo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_g2_logo"/>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:layout_margin="5dp"
-        android:elevation="3dp"
-        card_view:cardCornerRadius="0dp">
- 
-        <RelativeLayout
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
- 
-            <ImageView
-                android:id="@+id/thumbnail"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="2dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            card_view:cardElevation="2dp"
+            card_view:contentPadding="10dp"
+            card_view:cardMaxElevation="2dp"
+            card_view:cardBackgroundColor="#fff">
+
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="160dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:clickable="true"
-                android:scaleType="fitXY" />
- 
-            <TextView
-                android:id="@+id/title"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/thumbnail"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="10dp"
-                android:textColor="#4c4c4c"
-                android:textSize="15sp" />
- 
-            <TextView
-                android:id="@+id/count"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/title"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:textSize="12sp" />
- 
-        </RelativeLayout>
- 
-    </android.support.v7.widget.CardView>
- 
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/playerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColorSecondary"
+                    android:text="KusCutie"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentTop="true" />
+
+                <LinearLayout
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30"
+                        android:textColor="#16b9a4"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/"
+                        android:textColor="#afafaf"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginLeft="2dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="14"
+                        android:textColor="#f26d7d"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/"
+                        android:textColor="#afafaf"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginLeft="2dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="13"
+                        android:textColor="#ffc400"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_below="@+id/playerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/legendary"
+                        android:layout_below="@+id/playerName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_margin="3dp"
+                        android:elevation="5dp"
+                        card_view:cardCornerRadius="0dp">
+
+                        <ImageView
+                            android:id="@+id/legendaryImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/talent_androxus_darkstalker" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card1"
+                        android:layout_below="@+id/playerName"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_margin="3dp"
+                        android:elevation="5dp"
+                        card_view:cardCornerRadius="0dp">
+
+                        <ImageView
+                            android:id="@+id/card1Image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/card_heads_will_roll"
+                            android:scaleType="centerCrop"/>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card2"
+                        android:layout_below="@+id/playerName"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_margin="3dp"
+                        android:elevation="5dp"
+                        card_view:cardCornerRadius="0dp">
+
+                        <ImageView
+                            android:id="@+id/card2Image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/card_seething_hatred"
+                            android:scaleType="centerCrop"/>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card3"
+                        android:layout_below="@+id/playerName"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_margin="3dp"
+                        android:elevation="5dp"
+                        card_view:cardCornerRadius="0dp">
+
+                        <ImageView
+                            android:id="@+id/card3Image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/card_sleight_of_hand"
+                            android:scaleType="centerCrop"/>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card4"
+                        android:layout_below="@+id/playerName"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_margin="3dp"
+                        android:elevation="5dp"
+                        card_view:cardCornerRadius="0dp">
+
+                        <ImageView
+                            android:id="@+id/card4Image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/card_abyss_walker"
+                            android:scaleType="centerCrop"/>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card5"
+                        android:layout_below="@+id/playerName"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_margin="3dp"
+                        android:elevation="5dp"
+                        card_view:cardCornerRadius="0dp">
+
+                        <ImageView
+                            android:id="@+id/card5Image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/card_buying_time"
+                            android:scaleType="centerCrop"/>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
 </LinearLayout>
