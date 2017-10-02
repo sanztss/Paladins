@@ -42,11 +42,11 @@ public class ChampionBuildsFragment  extends Fragment {
         View rootView = inflater.inflate(R.layout.champion_builds_fragment, container, false);
         recyclerView = (RecyclerView)rootView.findViewById(R.id.recycler_view);
 
-        ProBuild proBuild1 = new ProBuild("ic_g2_logo","KusCutie","talent_androxus_darkstalker","card_buying_time","card_buying_time","card_buying_time","card_buying_time", "card_buying_time");
-        ProBuild proBuild2 = new ProBuild("ic_g2_logo","KusCutie","talent_androxus_darkstalker","card_buying_time","card_buying_time","card_buying_time","card_buying_time", "card_buying_time");
-        ProBuild proBuild3 = new ProBuild("ic_g2_logo","KusCutie","talent_androxus_darkstalker","card_buying_time","card_buying_time","card_buying_time","card_buying_time", "card_buying_time");
-        ProBuild proBuild4 = new ProBuild("ic_g2_logo","KusCutie","talent_androxus_darkstalker","card_buying_time","card_buying_time","card_buying_time","card_buying_time", "card_buying_time");
-        ProBuild proBuild5 = new ProBuild("ic_g2_logo","KusCutie","talent_androxus_darkstalker","card_buying_time","card_buying_time","card_buying_time","card_buying_time", "card_buying_time");
+        ProBuild proBuild1 = new ProBuild();
+        ProBuild proBuild2 = new ProBuild();
+        ProBuild proBuild3 = new ProBuild();
+        ProBuild proBuild4 = new ProBuild();
+        ProBuild proBuild5 = new ProBuild();
         proBuilds.add(proBuild1);
         proBuilds.add(proBuild2);
         proBuilds.add(proBuild3);
